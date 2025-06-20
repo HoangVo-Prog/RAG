@@ -2,9 +2,9 @@ transformers==4.40.0
 langchain==0.1.20
 langchainhub==0.1.15
 langchain-chroma
-langchain_experimental==0.0.61
-langchain-community==0.0.38
-langchain_huggingface==0.0.3
+langchain_experimental
+langchain-community
+langchain_huggingface
 python-dotenv==1.0.0
 pypdf
 streamlit==1.36.0
