@@ -24,6 +24,8 @@ if ! is_colab_or_notebook; then
   conda activate aio-rag
 else
   echo "🔍 Running in Colab or Notebook environment. Skipping conda setup."
+  echo "📦 Installing pyngrok for public access..."
+  pip install -q pyngrok
 fi
 
 # Install required libraries from requirements.txt

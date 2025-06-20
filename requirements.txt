@@ -1,11 +1,11 @@
-transformers==4.36.2
+transformers==4.40.0
 sentence-transformers==2.6.1
-langchain==0.1.20
+langchain==0.3.25
+langchain-community==0.3.25
 langchainhub==0.1.15
-langchain-community==0.0.30
-langchain-chroma==0.0.2
-langchain_experimental==0.0.58
-langchain-huggingface==0.0.5
+langchain-chroma==0.2.4
+langchain-huggingface==0.3.0
+langchain-experimental==0.3.4
 python-dotenv==1.0.0
 pypdf==3.17.4
 streamlit==1.36.0
