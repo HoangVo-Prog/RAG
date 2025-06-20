@@ -29,7 +29,7 @@ fi
 # Install required libraries from requirements.txt
 if [ -f "requirements.txt" ]; then
   echo "📦 Installing required Python libraries from requirements.txt..."
-  pip install -r requirements.txt
+  pip install -q -r requirements.txt
 else
   echo "❌ requirements.txt not found. Please make sure it exists in the project root."
   exit 1
