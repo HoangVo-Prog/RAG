@@ -1,65 +1,32 @@
-# RAG
+# AI Challenge 2025 – Competition Overview
 
-# 📘 PDF RAG Assistant – Project
+## 📌 Content
 
-Ứng dụng hỏi đáp tài liệu PDF bằng tiếng Việt, xây dựng dựa trên mô hình **RAG (Retrieval-Augmented Generation)**, kết hợp **LLM (Vicuna 7B)** và **semantic chunking**. Giao diện được xây dựng với **Streamlit**, người dùng có thể upload tài liệu, đặt câu hỏi và nhận câu trả lời tự động.
+-    Contestants will develop intelligent virtual assistant solutions that support in-depth analysis and retrieval of information from large-scale multimedia data (images, audio, text).
 
----
+-    The competition is organized in the format of a scientific challenge, similar to international competitions aiming to find effective solutions to emerging societal problems.
 
-## 🧱 Cấu trúc thư mục và mô tả
+-    The problem statement for the 2025 Competition is: **Virtual Assistant for querying information from large multimedia databases**, based on the formats of the **Lifelog Search Challenge (LSC)** and **Video Browser Showdown (VBS)**.
 
-```plaintext
-aio-rag/
-│
-├── main.py                  # Điểm khởi chạy ứng dụng Streamlit
-├── requirements.txt         # Danh sách thư viện cần cài
-├── config.py                # (Tùy chọn) file cấu hình chung
-├── api.py                   # (Tùy chọn) khởi tạo REST API nếu mở rộng
-├── .env                     # (Tùy chọn) chứa biến môi trường như API key
-│
-├── app/
-│   ├── core/                # Logic lõi: load model, xử lý PDF, build RAG chain
-│   │   ├── embeddings.py    # Load embedding model
-│   │   ├── llm.py           # Load LLM Vicuna
-│   │   ├── pdf.py           # Xử lý PDF: chunking, vector DB, build chain
-│   │   └── prompt.py        # (Tùy chọn) custom prompt template
-│   │
-│   ├── ui/                  # Giao diện người dùng Streamlit
-│   │   ├── interface.py     # Giao diện chính: upload, hỏi, trả lời
-│   │   └── __init__.py
-│   │
-│   ├── services/            # (Tùy chọn) xử lý trung gian
-│   │   └── question_handler.py  # (Tạm thời trống) quản lý hỏi đáp, lịch sử, format
-│   │
-│   └── api/                 # (Tùy chọn) triển khai REST API (FastAPI)
-│       ├── __init__.py
-│       ├── routes.py        # Khai báo endpoint như /ask
-│       └── schemas.py       # Định nghĩa model dữ liệu (Pydantic)
-│
-└── utils/                   # Tiện ích dùng chung
-    ├── logger.py            # (Tùy chọn) logging ra console/file
-    └── file.py              # (Tùy chọn) xử lý file upload, validate...
-```
+## 🧭 Competition Formats
 
----
+In alignment with global research trends, the AI Challenge 2025 will adopt two formats:
 
-## 🔁 Pipeline cơ bản
+1. **Traditional format**: Participants interact with their team's intelligent virtual assistant to handle multimedia information retrieval queries.
 
-![Alt text](./images/baseline_pipeline.png)
+2. **Automated format**: The competition will also pilot an **automated mode**, where virtual assistants compete autonomously.
 
----
+## 🚀 Encouraged Technologies
 
-## 🚀 How to run
+Participants are encouraged to:
 
-```bash
-# Tạo env và cài thư viện
-bash setup.sh
+- Develop and integrate solutions for big data processing and domain-specific Vietnamese data (language, audio, image).
+- Use cutting-edge technologies such as **Large Vision-Language Models (VLMs)**, **Generative AI**, and enable **smart interaction between modules/systems**.
 
-# Hoặc thủ công:
-conda create -n aio-rag python=3.11
-conda activate aio-rag
-pip install -r requirements.txt
+## 👩‍🎓 For Category B Contestants (High School Students)
 
-# Chạy ứng dụng
-streamlit run main.py
-```
+- Students from both specialized and non-specialized high schools (Category B) are allowed to use pre-built tools provided by the organizers to complete the tasks.
+
+## 📚 Training Support
+
+- After registration, contestants will receive training on key knowledge and skills aligned with the competition themes.
