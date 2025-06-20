@@ -1,5 +1,5 @@
 import streamlit as st
-from app.ui.interface import render, render2
+from app.ui.interface import render
 
 if __name__ == "__main__":
-    render2()
+    render1()
