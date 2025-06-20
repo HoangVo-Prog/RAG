@@ -1,6 +1,6 @@
 # RAG
 
-# 📘 PDF RAG Assistant – AIO 2025 Project
+# 📘 PDF RAG Assistant – Project
 
 Ứng dụng hỏi đáp tài liệu PDF bằng tiếng Việt, xây dựng dựa trên mô hình **RAG (Retrieval-Augmented Generation)**, kết hợp **LLM (Vicuna 7B)** và **semantic chunking**. Giao diện được xây dựng với **Streamlit**, người dùng có thể upload tài liệu, đặt câu hỏi và nhận câu trả lời tự động.
 
