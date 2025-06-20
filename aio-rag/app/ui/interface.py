@@ -55,12 +55,11 @@ def render2():
     st.set_page_config(page_title="Lem nhem", layout="wide")
     st.title("Lem's Slave AI")
     string = """
-    **Ứng dụng AI giúp bạn hỏi đáp trực tiếp với nội dung tài liệu PDF**
+    **Ứng dụng AI giúp Lem hỏi đáp trực tiếp với nội dung tài liệu PDF**
     **Cách sử dụng đơn giản:**
     1. **Upload PDF** Chọn file PDF từ máy tính và nhấn "Xử lý PDF"
     2. **Đặt câu hỏi** Nhập câu hỏi về nội dung tài liệu và nhận câu trả lời ngay lập tức
     ---"""
-    string.replace("bạn", "Lem")
     st.markdown(string)
 
     if "rag_chain" not in st.session_state:
