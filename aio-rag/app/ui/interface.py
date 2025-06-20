@@ -61,7 +61,7 @@ def render2():
     2. **Đặt câu hỏi** Nhập câu hỏi về nội dung tài liệu và nhận câu trả lời ngay lập tức
     ---"""
     string.replace("bạn", "Lem")
-    st.markdowns(string)
+    st.markdown(string)
 
     if "rag_chain" not in st.session_state:
         st.session_state.rag_chain = None
