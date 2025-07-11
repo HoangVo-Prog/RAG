@@ -16,10 +16,11 @@ def load_llm(MODEL_NAME="lmsys/vicuna-7b-v1.5"):
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         quantization_config=bnb_config,
-        low_cpu_mem_usage=True
+        low_cpu_mem_usage=True,
+        trust_remote_code=True
     )
     
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
     
     model_pipeline = pipeline(
         "text-generation",
@@ -27,7 +28,6 @@ def load_llm(MODEL_NAME="lmsys/vicuna-7b-v1.5"):
         tokenizer=tokenizer,
         max_new_tokens=512,
         pad_token_id=tokenizer.eos_token_id,
-        device_map={"": 0} if torch.cuda.is_available() else "cpu"  # Use GPU if available
     )
     
     return HuggingFacePipeline(pipeline=model_pipeline)
