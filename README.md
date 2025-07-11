@@ -10,35 +10,16 @@ A Vietnamese-language PDF question-answering application, built using the **RAG 
 
 ```plaintext
 rag/
-│
-├── main.py                  # Entry point of the Streamlit app
-├── requirements.txt         # Required Python packages
-├── config.py                # (Optional) Global configuration
-├── api.py                   # (Optional) REST API starter
-├── .env                     # (Optional) Environment variables like API keys
-│
 ├── app/
-│   ├── core/                # Core logic: load model, process PDF, build RAG chain
-│   │   ├── embeddings.py    # Load embedding model
-│   │   ├── llm.py           # Load Vicuna LLM
-│   │   ├── pdf.py           # PDF handling: chunking, vector DB, build chain
-│   │   └── prompt.py        # (Optional) Custom prompt templates
-│   │
-│   ├── ui/                  # Streamlit user interface
-│   │   ├── interface.py     # Main UI: upload, ask, answer
-│   │   └── __init__.py
-│   │
-│   ├── services/            # (Optional) Middleware logic
-│   │   └── question_handler.py  # (Currently empty) manages Q&A, history, formatting
-│   │
-│   └── api/                 # (Optional) REST API with FastAPI
-│       ├── __init__.py
-│       ├── routes.py        # Defines endpoints like /ask
-│       └── schemas.py       # Pydantic data models
-│
-└── utils/                   # Shared utilities
-    ├── logger.py            # (Optional) Logging to console/file
-    └── file.py              # (Optional) File upload, validation, etc.
+│   ├── core/
+│   │   ├── embeddings.py
+│   │   ├── llm.py
+│   │   ├── pdf.py
+│   ├── image/
+│   │   └── logo.png
+│   ├── ui/
+│   │   └── interface.py
+├── main.py
 ```
 
 ---
