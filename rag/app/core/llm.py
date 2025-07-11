@@ -27,7 +27,7 @@ def load_llm(MODEL_NAME="lmsys/vicuna-7b-v1.5"):
         tokenizer=tokenizer,
         max_new_tokens=512,
         pad_token_id=tokenizer.eos_token_id,
-        device_map="auto"
+        device_map={"": 0} if torch.cuda.is_available() else "cpu"  # Use GPU if available
     )
     
     return HuggingFacePipeline(pipeline=model_pipeline)

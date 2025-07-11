@@ -9,7 +9,7 @@ A Vietnamese-language PDF question-answering application, built using the **RAG 
 ## 🧱 Directory Structure & Description
 
 ```plaintext
-aio-rag/
+rag/
 │
 ├── main.py                  # Entry point of the Streamlit app
 ├── requirements.txt         # Required Python packages
