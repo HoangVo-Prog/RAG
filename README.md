@@ -20,6 +20,8 @@ rag/
 │   ├── ui/
 │   │   └── interface.py
 ├── main.py
+├── requirements.txt
+├── setup.sh
 ```
 
 ---
