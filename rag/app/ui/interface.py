@@ -36,7 +36,7 @@ def render():
     st.set_page_config(page_title="PDF RAG Assistant", layout="wide")
     st.title("PDF RAG Assistant")
 
-    st.logo("./image/logo.png", size="large")
+    st.logo("../image/logo.png", size="large")
 
     if "rag_chain" not in st.session_state:
         st.session_state.rag_chain = None
