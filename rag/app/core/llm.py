@@ -16,7 +16,7 @@ def load_llm(MODEL_NAME="lmsys/vicuna-7b-v1.5"):
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         quantization_config=bnb_config,
-        low_cpu_mem_usage=True,
+        # low_cpu_mem_usage=True,
         trust_remote_code=True,
         device_map={"":0}
     )
