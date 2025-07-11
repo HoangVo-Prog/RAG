@@ -10,4 +10,4 @@ python-dotenv==1.0.0
 pypdf==3.17.4
 streamlit==1.46.0
 bitsandbytes
-accelerate
+accelerate==0.21.0
